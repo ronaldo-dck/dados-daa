@@ -258,16 +258,16 @@ with aba4:
     st.plotly_chart(fig_formados, use_container_width=True)
 
     # NOVO: Tabela de taxa de permanência por turma (ano/curso)
-    st.subheader("Taxa de Permanência por Turma")
-    df_perm_turma = df_f.groupby(["ano", "curso_nome"], as_index=False)["Permanencia"].mean()
-    df_perm_turma["Permanencia (%)"] = df_perm_turma["Permanencia"].round(1)
-    st.dataframe(df_perm_turma[["ano", "curso_nome", "Permanencia (%)"]], use_container_width=True)
-    fig_formados = px.line(
-        df_formados,
-        x="ano",
-        y=["formados_geral","formados_min"],
-        color="curso_nome",
-        labels={"value": "Quantidade de Formados", "ano": "Ano de Ingresso", "curso_nome": "Curso", "variable": "Indicador"},
-        markers=True
-    )
-    st.plotly_chart(fig_formados, use_container_width=True)
+    # st.subheader("Taxa de Permanência por Turma")
+    # df_perm_turma = df_f.groupby(["ano", "curso_nome"], as_index=False)["Permanencia"].mean()
+    # df_perm_turma["Permanencia (%)"] = df_perm_turma["Permanencia"].round(1)
+    # st.dataframe(df_perm_turma[["ano", "curso_nome", "Permanencia (%)"]], use_container_width=True)
+    # fig_formados = px.line(
+    #     df_formados,
+    #     x="ano",
+    #     y=["formados_geral","formados_min"],
+    #     color="curso_nome",
+    #     labels={"value": "Quantidade de Formados", "ano": "Ano de Ingresso", "curso_nome": "Curso", "variable": "Indicador"},
+    #     markers=True
+    # )
+    # st.plotly_chart(fig_formados, use_container_width=True)
