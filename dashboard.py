@@ -225,14 +225,16 @@ with aba3:
 
 # ---------------------- ABA 4 ----------------------
 with aba4:
-    st.subheader("Desempenho dos Formados por Turma")
     series_cols = ["primeiro_ano","segundo_ano","terceiro_ano","quarto_ano","quinto_ano","sexto_ano"]
-    df_series = df_f.groupby(["ano", "curso_nome"])[series_cols].sum().reset_index()
-    st.dataframe(df_series, use_container_width=True)
+    aux = df_f[df_f["curso_nome"].isin(cursos)]
+    df_series = aux.groupby(["ano", "curso_nome"])[series_cols].sum().reset_index()
+    
+    ## AGORA PRECISO QUE INTEGRE NO LUGAR DESSE AQUI
 
     # Gráfico único: evolução de todas as séries ao longo dos anos
     st.subheader("Evolução das Séries ao Longo dos Anos (Todas as Séries)")
     df_series_melt = df_series.melt(id_vars=["ano", "curso_nome"], value_vars=series_cols, var_name="Série", value_name="Alunos")
+    print(df_series_melt)
     fig_series_all = px.line(
         df_series_melt,
         x="ano",
@@ -245,29 +247,46 @@ with aba4:
     st.plotly_chart(fig_series_all, use_container_width=True)
 
     # Gráfico comparando formados_geral e formados_min ao longo dos anos
-    st.subheader("Formados Geral x Formados Min por Turma")
+    # Agrupa os dados
     df_formados = df_f.groupby(["ano", "curso_nome"], as_index=False)[["formados_geral","formados_min"]].sum()
-    fig_formados = px.line(
-        df_formados,
+    df_formados["formados_outros"] = df_formados["formados_geral"] - df_formados["formados_min"]
+    df_long = df_formados.melt(
+        id_vars=["ano","curso_nome"],
+        value_vars=["formados_min", "formados_outros"],
+        var_name="tipo",
+        value_name="quantidade"
+    )
+    df_long["tipo"] = df_long["tipo"].replace({
+        "formados_min": "Min",
+        "formados_outros": "Outros (Geral - Min)"
+    })
+
+    # Limita o número de facetas para evitar erro do Plotly
+    cursos_unicos = df_long["curso_nome"].unique()
+    max_facetas = 10
+    if len(cursos_unicos) > max_facetas:
+        st.warning(f"Exibindo apenas os {max_facetas} primeiros cursos para evitar erro de visualização. Refine o filtro de cursos para ver outros.")
+        cursos_para_plot = cursos_unicos[:max_facetas]
+        df_long_plot = df_long[df_long["curso_nome"].isin(cursos_para_plot)]
+    else:
+        df_long_plot = df_long
+
+    fig_formados = px.bar(
+        df_long_plot,
         x="ano",
-        y=["formados_geral","formados_min"],
-        color="curso_nome",
-        labels={"value": "Quantidade de Formados", "ano": "Ano de Ingresso", "curso_nome": "Curso", "variable": "Indicador"},
-        markers=True
+        y="quantidade",
+        color="tipo",
+        facet_col="curso_nome",
+        barmode="stack",
+        labels={
+            "quantidade": "Quantidade de Formados",
+            "ano": "Ano de Ingresso",
+            "tipo": "Categoria"
+        },
+        facet_col_spacing=0.01  # reduz ainda mais o espaçamento
     )
     st.plotly_chart(fig_formados, use_container_width=True)
+    
 
-    # NOVO: Tabela de taxa de permanência por turma (ano/curso)
-    # st.subheader("Taxa de Permanência por Turma")
-    # df_perm_turma = df_f.groupby(["ano", "curso_nome"], as_index=False)["Permanencia"].mean()
-    # df_perm_turma["Permanencia (%)"] = df_perm_turma["Permanencia"].round(1)
-    # st.dataframe(df_perm_turma[["ano", "curso_nome", "Permanencia (%)"]], use_container_width=True)
-    # fig_formados = px.line(
-    #     df_formados,
-    #     x="ano",
-    #     y=["formados_geral","formados_min"],
-    #     color="curso_nome",
-    #     labels={"value": "Quantidade de Formados", "ano": "Ano de Ingresso", "curso_nome": "Curso", "variable": "Indicador"},
-    #     markers=True
-    # )
-    # st.plotly_chart(fig_formados, use_container_width=True)
+    st.subheader("Desempenho dos Formados por Turma")
+    st.dataframe(df_series, use_container_width=True)
