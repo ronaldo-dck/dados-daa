@@ -205,11 +205,13 @@ aba1, aba2, aba3, aba4, aba5 = st.tabs([
 # ---------------------- ABA 1 ----------------------
 with aba1:
     st.subheader("Indicadores Gerais")
-    col1, col2, col3 = st.columns(3)
+    col1, col2, col3, col4 = st.columns(4)
     col1.metric("Total de Ingressantes", int(df_f["ingressantes_geral"].sum(skipna=True)))
     col2.metric("Total de Formados", int(df_f["formados_geral"].sum(skipna=True)))
     permanencias_validas = df_f.loc[df_f['Permanencia'] > 0, 'Permanencia']
     col3.metric("Permanência Média (%)", f"{permanencias_validas.mean(skipna=True)*100:.1f}%")
+    # NOVO: Total de vagas ofertadas
+    col4.metric("Total de Vagas Ofertadas", int(df_f["vagas"].sum(skipna=True)))
 
     st.subheader("Evolução de Ingressantes e Formados")
     df_plot = df_f.groupby("ano", as_index=False)[["ingressantes_geral","formados_geral"]].sum()
@@ -217,6 +219,14 @@ with aba1:
                   labels={"value":"Quantidade","variable":"Indicador"}, markers=True)
     fig = adicionar_fundo_pandemia(fig)
     st.plotly_chart(fig, use_container_width=True)
+
+    # NOVO: Gráfico de evolução das vagas ofertadas
+    st.subheader("Evolução das Vagas Ofertadas")
+    df_vagas_ano = df_f.groupby("ano", as_index=False)["vagas"].sum()
+    fig_vagas = px.line(df_vagas_ano, x="ano", y="vagas", markers=True,
+                        labels={"vagas": "Vagas Ofertadas", "ano": "Ano"})
+    fig_vagas = adicionar_fundo_pandemia(fig_vagas)
+    st.plotly_chart(fig_vagas, use_container_width=True)
 
 
 
@@ -317,19 +327,75 @@ with aba2:
                   labels={"incritos_vest": "Inscritos no Vestibular", "curso_nome": "Curso"},
                   text="incritos_vest")
     fig7.update_layout(yaxis={'categoryorder':'total ascending'})
-    fig7 = adicionar_fundo_pandemia(fig7)
     st.plotly_chart(fig7, use_container_width=True)
 
-    st.subheader("Relação Inscritos por Vaga")
-    df_rel_vest_vagas = df_f.groupby("curso_nome", as_index=False)[["incritos_vest","vagas"]].sum()
-    df_rel_vest_vagas["inscritos_por_vaga"] = df_rel_vest_vagas["incritos_vest"] / df_rel_vest_vagas["vagas"]
+    # st.subheader("Relação Inscritos por Vaga")
+    df_rel_vest_vagas = df_f.groupby("curso_nome", as_index=False)[["incritos_vest","vagas","ano"]].agg({
+        "incritos_vest": "sum",
+        "vagas": "sum",
+        "ano": "min"  # pega o menor ano do filtro para cada curso
+    })
+    # Aplica a regra: dobra inscritos_por_vaga para anos >= 2014
+    def concorrencia_corrigida(row):
+        if row["ano"] >= 2014:
+            return 2 * (row["incritos_vest"] / row["vagas"]) if row["vagas"] > 0 else 0
+        else:
+            return (row["incritos_vest"] / row["vagas"]) if row["vagas"] > 0 else 0
+    df_rel_vest_vagas["inscritos_por_vaga"] = df_rel_vest_vagas.apply(concorrencia_corrigida, axis=1)
     df_rel_vest_vagas = df_rel_vest_vagas.sort_values("inscritos_por_vaga", ascending=True)
     fig8 = px.bar(df_rel_vest_vagas, x="inscritos_por_vaga", y="curso_nome", orientation="h",
                   labels={"inscritos_por_vaga": "Inscritos por Vaga", "curso_nome": "Curso"},
-                  text="inscritos_por_vaga")
+                 text="inscritos_por_vaga")
     fig8.update_layout(yaxis={'categoryorder':'total ascending'})
     fig8 = adicionar_fundo_pandemia(fig8)
-    st.plotly_chart(fig8, use_container_width=True)
+    # st.plotly_chart(fig8, use_container_width=True) 
+
+    # NOVO: Vagas ofertadas no vestibular e concorrência (inscritos por vaga)
+    st.subheader("Vagas Ofertadas no Vestibular e Concorrência por Curso")
+
+    # Calcula vagas do vestibular conforme regra: até 2013 = vagas, a partir de 2014 = vagas * 0.5
+    df_f["vagas_vest"] = df_f.apply(lambda row: row["vagas"] if row["ano"] < 2014 else row["vagas"] * 0.5, axis=1)
+
+    # Agrupa por curso
+    df_vest = df_f.groupby("curso_nome", as_index=False).agg({
+        "incritos_vest": "sum",
+        "vagas_vest": "sum"
+    })
+    df_vest["concorrencia_vest"] = df_vest.apply(
+        lambda row: row["incritos_vest"] / row["vagas_vest"] if row["vagas_vest"] > 0 else 0, axis=1
+    )
+
+    # Ordena por concorrência
+    df_vest = df_vest.sort_values("concorrencia_vest", ascending=True)
+
+    # Gráfico de barras duplo: vagas ofertadas (barra), concorrência (linha)
+    import plotly.graph_objects as go
+    fig_vest = go.Figure()
+    fig_vest.add_trace(go.Bar(
+        x=df_vest["concorrencia_vest"],
+        y=df_vest["curso_nome"],
+        orientation="h",
+        name="Concorrência (Inscritos por Vaga)",
+        marker_color="orange",
+        text=df_vest["concorrencia_vest"].round(2),
+        textposition="outside"
+    ))
+    fig_vest.add_trace(go.Bar(
+        x=df_vest["vagas_vest"],
+        y=df_vest["curso_nome"],
+        orientation="h",
+        name="Vagas Vestibular",
+        marker_color="blue",
+        text=df_vest["vagas_vest"].astype(int),
+        textposition="inside"
+    ))
+    fig_vest.update_layout(
+        barmode="group",
+        xaxis_title="Quantidade",
+        yaxis_title="Curso",
+        legend_title="Legenda"
+    )
+    st.plotly_chart(fig_vest, use_container_width=True)
 
 # ---------------------- ABA 3 ----------------------
 with aba3:
