@@ -307,18 +307,19 @@ with aba2:
     fig5 = px.bar(df_total_insc, x="Processo", y="Total de Inscritos", text="Total de Inscritos")
     st.plotly_chart(fig5, use_container_width=True)
 
-    st.subheader("Relação Inscritos x Ingressantes (%)")
-    df_rel = df_f.groupby("ano", as_index=False).agg({
-        "incritos_vest":"sum","ingressantes_vest":"sum",
-        "incritos_sisu":"sum","ingressantes_sisu":"sum",
-        "incritos_provare":"sum","ingressantes_provare":"sum",
-    })
-    for p in ["vest","sisu","provare"]:
-        df_rel[f"rel_{p}"] = 100 * df_rel[f"incritos_{p}"] / df_rel[f"ingressantes_{p}"]
-    fig6 = px.line(df_rel, x="ano", y=["rel_vest","rel_sisu","rel_provare"],
-                   labels={"value":"Inscritos / Ingressantes (%)","variable":"Processo"}, markers=True)
-    fig6 = adicionar_fundo_pandemia(fig6)
-    st.plotly_chart(fig6, use_container_width=True)
+    # st.subheader("Relação Ingressantes x Inscritos (%)")
+    # df_rel = df_f.groupby("ano", as_index=False).agg({
+    #     "incritos_vest":"sum","ingressantes_vest":"sum",
+    #     "incritos_sisu":"sum","ingressantes_sisu":"sum",
+    #     "incritos_provare":"sum","ingressantes_provare":"sum",
+    # })
+    # for p in ["vest","sisu","provare"]:
+    #     # Agora: ingressantes / inscritos
+    #     df_rel[f"rel_{p}"] = 100 * df_rel[f"ingressantes_{p}"] / df_rel[f"incritos_{p}"]
+    # fig6 = px.line(df_rel, x="ano", y=["rel_vest","rel_sisu","rel_provare"],
+    #                labels={"value":"Ingressantes / Inscritos (%)","variable":"Processo"}, markers=True)
+    # fig6 = adicionar_fundo_pandemia(fig6)
+    # st.plotly_chart(fig6, use_container_width=True)
 
     st.subheader("Inscritos no Vestibular por Curso")
     df_vest_curso = df_f.groupby("curso_nome", as_index=False)["incritos_vest"].sum()
