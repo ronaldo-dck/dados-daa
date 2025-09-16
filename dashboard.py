@@ -77,7 +77,7 @@ df_f = df_f[(df_f["ano"] >= anos[0]) & (df_f["ano"] <= anos[1])]
 # ---------------------------------------
 # 3) Tabs
 # ---------------------------------------
-aba1, aba2, aba3, aba4 = st.tabs(["📊 Visão Geral", "📝 Inscrições", "📂 Dados Brutos", "📈 Desempenho por Turma"])
+aba1, aba2, aba3, aba4, aba5 = st.tabs(["📊 Visão Geral", "📝 Inscrições", "📂 Dados Brutos", "📈 Desempenho por Turma", "🎯 Desempenho de uma Turma"])
 
 # ---------------------- ABA 1 ----------------------
 with aba1:
@@ -290,3 +290,171 @@ with aba4:
 
     st.subheader("Desempenho dos Formados por Turma")
     st.dataframe(df_series, use_container_width=True)
+
+
+# ---------------------------------------
+# 5) Nova aba – Desempenho de uma Turma
+# ---------------------------------------
+
+with aba5:
+    st.subheader("Acompanhamento de uma Turma")
+
+    # Escolha do curso e ano de ingresso
+    curso_turma = st.selectbox(
+        "Curso",
+        sorted(df["curso_nome"].dropna().unique()),
+        key="turma_curso"
+    )
+    ano_ingresso = st.selectbox(
+        "Ano de ingresso",
+        sorted(
+            df[df["curso_nome"] == curso_turma]["ano"]
+              .dropna().unique().astype(int)
+        , reverse=True),
+        key="turma_ano"
+    )
+
+    # Filtra somente a turma escolhida
+    turma_df = df[(df["curso_nome"] == curso_turma) & (df["ano"] >= int(ano_ingresso))]
+
+    if turma_df.empty:
+        st.warning("Não há dados para essa combinação de curso e ano.")
+    else:
+        # -----------------------------
+        # Descobre quantos anos o curso tem
+        # -----------------------------
+        anos_curso = int(
+            df[df["curso_nome"] == curso_turma]["formados_min"].max(skipna=True)
+        )
+        anos_curso = 6  # Padrão se não tiver
+        st.write(f"Duração mínima estimada do curso: **{anos_curso} anos**")
+
+        # -----------------------------
+        # Monta a evolução da turma
+        # -----------------------------
+        series_map = {
+            "primeiro_ano": 1,
+            "segundo_ano": 2,
+            "terceiro_ano": 3,
+            "quarto_ano": 4,
+            "quinto_ano": 5,
+            "sexto_ano": 6,
+        }
+
+        evolucao = []
+        ano_formatura = int(ano_ingresso) - 1  # começa um ano antes
+
+        for i in range(anos_curso):
+            col_nome = list(series_map.keys())[i]
+            ano_corrente = int(ano_ingresso) + i
+            valor = df[
+                (df["curso_nome"] == curso_turma) & (df["ano"] == ano_corrente)
+            ][col_nome].sum()
+            if valor == 0:
+                continue
+            ano_formatura += 1
+            evolucao.append({
+                "Ano civil": ano_corrente,
+                "Ano da turma": i + 1,
+                "Matriculados": valor,
+                "Formados tempo mínimo": 0  # placeholder
+            })
+
+        # -----------------------------
+        # Verifica se a turma já atingiu o tempo mínimo
+        # -----------------------------
+            # Adiciona os formados normalmente
+        formados_total = df[
+            (df["curso_nome"] == curso_turma) & (df["ano"] == ano_formatura)
+        ]["formados_geral"].sum()
+        formados_minimo = df[
+            (df["curso_nome"] == curso_turma) & (df["ano"] == ano_formatura)
+        ]["formados_min"].sum()
+
+        if formados_total == 0:
+            st.warning(
+                f"A turma de {curso_turma} do ano {ano_ingresso} ainda não atingiu "
+                f"o tempo mínimo de formação.  \n"
+                f"Ou se formará este ano"
+            )
+
+
+        evolucao.append({
+            "Ano civil": ano_formatura,
+            "Ano da turma": "Formados",
+            "Matriculados": formados_total,
+            "Formados tempo mínimo": formados_minimo
+        })
+
+        # Cria DataFrame
+        df_evolucao = pd.DataFrame(evolucao)
+
+        # Converte colunas para numérico
+        df_evolucao["Matriculados"] = pd.to_numeric(
+            df_evolucao["Matriculados"], errors="coerce"
+        ).fillna(0)
+        df_evolucao["Formados tempo mínimo"] = pd.to_numeric(
+            df_evolucao["Formados tempo mínimo"], errors="coerce"
+        ).fillna(0)
+
+        st.dataframe(df_evolucao, use_container_width=True)
+
+        # -----------------------------
+        # Gráfico misto: linha + barras sobrepostas
+        # -----------------------------
+        import plotly.graph_objects as go
+
+        df_linha = df_evolucao[df_evolucao["Ano da turma"] != "Formados"]
+        df_barra = df_evolucao[df_evolucao["Ano da turma"] == "Formados"]
+
+        fig_turma = go.Figure()
+
+        # Linha da evolução
+        fig_turma.add_trace(
+            go.Scatter(
+                x=df_linha["Ano civil"],
+                y=df_linha["Matriculados"],
+                mode="lines+markers+text",
+                text=df_linha["Matriculados"],
+                textposition="top center",
+                name="Matriculados"
+            )
+        )
+
+        # Barra: formados total
+        fig_turma.add_trace(
+            go.Bar(
+                x=df_barra["Ano civil"],
+                y=df_barra["Matriculados"],
+                text=df_barra["Matriculados"],
+                textposition="outside",
+                name="Formados total",
+                marker_color="lightblue"
+            )
+        )
+
+        # Barra: formados em tempo mínimo (subgrupo)
+        fig_turma.add_trace(
+            go.Bar(
+                x=df_barra["Ano civil"],
+                y=df_barra["Formados tempo mínimo"],
+                text=df_barra["Formados tempo mínimo"],
+                textposition="inside",
+                name="Formados em tempo mínimo",
+                marker_color="blue"
+            )
+        )
+
+        # Layout com barras sobrepostas
+        fig_turma.update_layout(
+            barmode="overlay",  # barra menor sobreposta à maior
+            yaxis=dict(range=[0, max(
+                df_evolucao["Matriculados"].max(),
+                df_evolucao["Formados tempo mínimo"].max()
+            ) * 1.1]),
+            xaxis_title="Ano",
+            yaxis_title="Alunos",
+            legend_title="Legenda"
+        )
+
+        st.plotly_chart(fig_turma, use_container_width=True)
