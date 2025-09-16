@@ -205,13 +205,13 @@ aba1, aba2, aba3, aba4, aba5 = st.tabs([
 # ---------------------- ABA 1 ----------------------
 with aba1:
     st.subheader("Indicadores Gerais")
-    col1, col2, col3, col4 = st.columns(4)
+    col1, col2, col3 = st.columns(3)
     col1.metric("Total de Ingressantes", int(df_f["ingressantes_geral"].sum(skipna=True)))
     col2.metric("Total de Formados", int(df_f["formados_geral"].sum(skipna=True)))
     permanencias_validas = df_f.loc[df_f['Permanencia'] > 0, 'Permanencia']
     col3.metric("Permanência Média (%)", f"{permanencias_validas.mean(skipna=True)*100:.1f}%")
     # NOVO: Total de vagas ofertadas
-    col4.metric("Total de Vagas Ofertadas", int(df_f["vagas"].sum(skipna=True)))
+    # col4.metric("Total de Vagas Ofertadas", int(df_f["vagas"].sum(skipna=True)))
 
     st.subheader("Evolução de Ingressantes e Formados")
     df_plot = df_f.groupby("ano", as_index=False)[["ingressantes_geral","formados_geral"]].sum()
