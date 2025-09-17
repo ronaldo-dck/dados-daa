@@ -454,6 +454,7 @@ with aba4:
 # ---------------------- ABA 5 ----------------------
 with aba5:
     st.subheader("Acompanhamento de uma Turma")
+    st.text("Selecione o curso e o ano de ingresso para ver a evolução da turma ao longo dos anos.")
 
     # Seleção do curso
     cursos_disponiveis = sorted(df["curso_nome"].dropna().unique())
