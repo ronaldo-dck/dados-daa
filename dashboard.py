@@ -405,19 +405,33 @@ with aba3:
 
 # ---------------------- ABA 4 ----------------------
 with aba4:
+    # ...existing code...
     series_cols = ["primeiro_ano","segundo_ano","terceiro_ano","quarto_ano","quinto_ano","sexto_ano"]
     aux = df_f[df_f["curso_nome"].isin(cursos)]
     df_series = aux.groupby(["ano", "curso_nome"])[series_cols].sum().reset_index()
-
+    
     st.subheader("Evolução das Séries ao Longo dos Anos (Todas as Séries)")
-    df_series_melt = df_series.melt(id_vars=["ano", "curso_nome"], value_vars=series_cols,
-                                    var_name="Série", value_name="Alunos")
-    fig_series_all = px.line(df_series_melt, x="ano", y="Alunos", color="Série",
-                             line_dash="curso_nome", labels={"Alunos": "Quantidade de Alunos",
-                                                             "ano": "Ano de Ingresso", "Série": "Série"},
-                             markers=True)
+    df_series_melt = df_series.melt(
+        id_vars=["ano", "curso_nome"],
+        value_vars=series_cols,
+        var_name="Série",
+        value_name="Alunos"
+    )
+    fig_series_all = px.bar(
+        df_series_melt,
+        x="ano",
+        y="Alunos",
+        color="Série",
+        barmode="group",  # barras agrupadas
+        labels={
+            "Alunos": "Quantidade de Alunos",
+            "ano": "Ano de Ingresso",
+            "Série": "Série"
+        }
+    )
     fig_series_all = adicionar_fundo_pandemia(fig_series_all)
     st.plotly_chart(fig_series_all, use_container_width=True)
+    # ...existing code...
 
     # NOVO: Gráfico de barras de formados_geral e formados_min
     st.subheader("Quantidade de Formados Geral e em Tempo Mínimo")
