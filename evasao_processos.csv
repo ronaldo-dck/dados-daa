@@ -1,0 +1,369 @@
+﻿ano,campus,curso,entradas_vest,entradas_sisu,entradas_provare,evasao_vest,evasao_sisu,evasao_provare,evasao_total,perc_vest,perc_sisu,perc_provare,perc_total
+2020,CCSC,Administração,26,17,9,0,0,1,1,0.0,0.0,11.11,1.92
+2020,CCSC,Ciência da Computação,16,17,7,1,3,1,5,6.25,17.65,14.29,12.5
+2020,CCSC,Ciências Biológicas,39,33,9,3,7,1,11,7.69,21.21,11.11,13.58
+2020,CCSC,Ciências Contábeis,20,16,4,0,0,0,0,0.0,0.0,0.0,0.0
+2020,CCSC,Ciências Econômicas,25,22,5,0,1,1,2,0.0,4.55,20.0,3.85
+2020,CCSC,Enfermagem,20,16,5,1,3,1,5,5.0,18.75,20.0,12.2
+2020,CCSC,Engenharia Agrícola,17,16,7,0,6,2,8,0.0,37.5,28.57,20.0
+2020,CCSC,Engenharia Civil,16,17,7,1,3,0,4,6.25,17.65,0.0,10.0
+2020,CCSC,Farmácia,17,15,8,0,1,0,1,0.0,6.67,0.0,2.5
+2020,CCSC,Fisioterapia,19,14,7,1,0,2,3,5.26,0.0,28.57,7.5
+2020,CCSC,Superior de Tecnologia em Gestão Pública,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0
+2020,CCSC,Letras,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0
+2020,CCSC,Letras - Língua Portuguesa e Língua Espanhola e Respectivas Literaturas,8,8,0,4,5,0,9,50.0,62.5,0.0,56.25
+2020,CCSC,Letras - Língua Portuguesa e Língua Inglesa e Respectivas Literaturas,10,7,3,1,3,0,4,10.0,42.86,0.0,20.0
+2020,CCSC,Letras - Língua Portuguesa e Língua Italiana e Respectivas Literaturas,7,6,2,0,0,1,1,0.0,0.0,50.0,6.67
+2020,CCSC,Letras - Língua Portuguesa e Língua Brasileira de Sinais - Libras - Tradução e Interpretação,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0
+2020,CCSC,Letras - língua Portuguesa e Língua Brasileira de Sinais- Libras e Literaturas Brasileira e Surda.,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0
+2020,CCSC,Matemática,20,16,5,4,1,1,6,20.0,6.25,20.0,14.63
+2020,CCSC,Medicina,20,19,1,0,1,0,1,0.0,5.26,0.0,2.5
+2020,CCSC,Odontologia,20,15,6,0,2,0,2,0.0,13.33,0.0,4.88
+2020,CCSC,Pedagogia,38,32,12,2,6,0,8,5.26,18.75,0.0,9.76
+2020,CFOZ,Administração,18,15,7,1,0,0,1,5.56,0.0,0.0,2.5
+2020,CFOZ,Ciência da Computação,19,20,3,1,0,0,1,5.26,0.0,0.0,2.38
+2020,CFOZ,Ciências Contábeis,17,17,7,0,5,0,5,0.0,29.41,0.0,12.2
+2020,CFOZ,Direito,21,17,4,0,1,1,2,0.0,5.88,25.0,4.76
+2020,CFOZ,Enfermagem,18,10,12,2,1,1,4,11.11,10.0,8.33,10.0
+2020,CFOZ,Engenharia Elétrica,17,19,2,0,2,1,3,0.0,10.53,50.0,7.89
+2020,CFOZ,Engenharia Mecânica,17,17,7,3,3,1,7,17.65,17.65,14.29,17.07
+2020,CFOZ,Hotelaria,9,12,4,1,1,1,3,11.11,8.33,25.0,12.0
+2020,CFOZ,Letras,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0
+2020,CFOZ,Letras - Língua Portuguesa e Língua Espanhola e Respectivas Literaturas,7,9,3,0,0,0,0,0.0,0.0,0.0,0.0
+2020,CFOZ,Letras - Língua Portuguesa e Língua Inglesa e Respectivas Literaturas,12,9,3,0,0,1,1,0.0,0.0,33.33,4.17
+2020,CFOZ,Matemática,8,15,3,0,2,0,2,0.0,13.33,0.0,7.69
+2020,CFOZ,Pedagogia,20,16,4,0,1,0,1,0.0,6.25,0.0,2.5
+2020,CFOZ,Turismo,15,16,4,0,2,0,2,0.0,12.5,0.0,5.71
+2020,CFB,Administração,17,17,6,0,4,0,4,0.0,23.53,0.0,10.0
+2020,CFB,Ciências Econômicas,25,22,5,1,3,1,5,4.0,13.64,20.0,9.62
+2020,CFB,Direito,19,18,3,0,2,0,2,0.0,11.11,0.0,5.0
+2020,CFB,Geografia,19,24,7,2,4,0,6,10.53,16.67,0.0,12.0
+2020,CFB,Medicina,19,19,2,0,1,0,1,0.0,5.26,0.0,2.5
+2020,CFB,Nutrição,18,14,8,3,1,1,5,16.67,7.14,12.5,12.5
+2020,CFB,Pedagogia,39,38,5,2,4,0,6,5.13,10.53,0.0,7.32
+2020,CFB,Serviço Social,19,15,3,0,1,0,1,0.0,6.67,0.0,2.7
+2020,CMCR,Administração,18,20,2,4,0,0,4,22.22,0.0,0.0,10.0
+2020,CMCR,Agronomia,15,18,7,1,0,0,1,6.67,0.0,0.0,2.5
+2020,CMCR,Ciências Contábeis,20,19,1,2,0,0,2,10.0,0.0,0.0,5.0
+2020,CMCR,Direito,19,20,2,1,0,0,1,5.26,0.0,0.0,2.44
+2020,CMCR,Educação Física,36,27,9,7,3,0,10,19.44,11.11,0.0,13.89
+2020,CMCR,Geografia,10,9,2,2,1,0,3,20.0,11.11,0.0,14.29
+2020,CMCR,História,24,15,0,6,6,0,12,25.0,40.0,0.0,30.77
+2020,CMCR,Letras - Língua Portuguesa e Respectivas Literaturas e Língua Alemã,3,0,2,0,0,0,0,0.0,0.0,0.0,0.0
+2020,CMCR,Letras - Língua Portuguesa e Respectivas Literaturas e Língua Espanhola,6,5,3,0,0,0,0,0.0,0.0,0.0,0.0
+2020,CMCR,Letras - Língua Portuguesa e Respetivas Literaturas e Língua Inglesa,8,8,0,0,1,0,1,0.0,12.5,0.0,6.25
+2020,CMCR,Zootecnia,17,17,6,1,2,0,3,5.88,11.76,0.0,7.5
+2020,CTOO,Ciências Econômicas,20,18,2,0,0,0,0,0.0,0.0,0.0,0.0
+2020,CTOO,Ciências Sociais,19,15,4,2,1,0,3,10.53,6.67,0.0,7.89
+2020,CTOO,Engenharia de Pesca,6,8,0,0,1,0,1,0.0,12.5,0.0,7.14
+2020,CTOO,Engenharia Química,14,18,2,0,0,0,0,0.0,0.0,0.0,0.0
+2020,CTOO,Filosofia,29,22,1,2,3,1,6,6.9,13.64,100.0,11.54
+2020,CTOO,Química,28,36,3,5,5,1,11,17.86,13.89,33.33,16.42
+2020,CTOO,Secretariado Executivo Trilíngue,19,15,7,1,1,0,2,5.26,6.67,0.0,4.88
+2020,CTOO,Serviço Social,19,19,1,1,1,0,2,5.26,5.26,0.0,5.13
+2021,CCSC,Administração,26,17,12,1,0,3,4,3.85,0.0,25.0,7.27
+2021,CCSC,Ciência da Computação,20,17,5,0,0,1,1,0.0,0.0,20.0,2.38
+2021,CCSC,Ciências Biológicas,36,21,24,2,1,4,7,5.56,4.76,16.67,8.64
+2021,CCSC,Ciências Contábeis,22,17,5,0,0,1,1,0.0,0.0,20.0,2.27
+2021,CCSC,Ciências Econômicas,21,15,16,2,0,2,4,9.52,0.0,12.5,7.69
+2021,CCSC,Enfermagem,16,5,18,1,0,3,4,6.25,0.0,16.67,10.26
+2021,CCSC,Engenharia Agrícola,13,9,13,0,1,0,1,0.0,11.11,0.0,2.86
+2021,CCSC,Engenharia Civil,23,15,12,1,1,4,6,4.35,6.67,33.33,12.0
+2021,CCSC,Farmácia,22,11,12,3,2,2,7,13.64,18.18,16.67,15.56
+2021,CCSC,Fisioterapia,20,11,12,0,1,3,4,0.0,9.09,25.0,9.3
+2021,CCSC,Letras - Língua Portuguesa e Língua Espanhola e Respectivas Literaturas,5,1,9,0,0,0,0,0.0,0.0,0.0,0.0
+2021,CCSC,Letras - Língua Portuguesa e Língua Inglesa e Respectivas Literaturas,9,6,5,1,0,1,2,11.11,0.0,20.0,10.0
+2021,CCSC,Letras - Língua Portuguesa e Língua Italiana e Respectivas Literaturas,6,2,7,0,0,0,0,0.0,0.0,0.0,0.0
+2021,CCSC,Letras - Língua Portuguesa e Língua Brasileira de Sinais - Libras - Tradução e Interpretação,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0
+2021,CCSC,Letras - língua Portuguesa e Língua Brasileira de Sinais- Libras e Literaturas Brasileira e Surda.,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0
+2021,CCSC,Matemática,12,12,16,2,2,4,8,16.67,16.67,25.0,20.0
+2021,CCSC,Medicina,21,16,5,5,5,1,11,23.81,31.25,20.0,26.19
+2021,CCSC,Odontologia,19,5,19,2,1,5,8,10.53,20.0,26.32,18.6
+2021,CCSC,Pedagogia,29,25,22,2,5,1,8,6.9,20.0,4.55,10.53
+2021,CFOZ,Administração,18,12,10,1,1,4,6,5.56,8.33,40.0,15.0
+2021,CFOZ,Ciência da Computação,14,12,13,1,5,1,7,7.14,41.67,7.69,17.95
+2021,CFOZ,Ciências Contábeis,21,14,7,1,5,0,6,4.76,35.71,0.0,14.29
+2021,CFOZ,Direito,27,6,11,3,1,3,7,11.11,16.67,27.27,15.91
+2021,CFOZ,Enfermagem,21,7,14,1,0,1,2,4.76,0.0,7.14,4.76
+2021,CFOZ,Engenharia Elétrica,20,15,7,2,0,0,2,10.0,0.0,0.0,4.76
+2021,CFOZ,Engenharia Mecânica,19,13,10,2,3,6,11,10.53,23.08,60.0,26.19
+2021,CFOZ,Hotelaria,0,1,28,0,0,6,6,0.0,0.0,21.43,20.69
+2021,CFOZ,Letras - Língua Portuguesa e Língua Espanhola e Respectivas Literaturas,2,4,15,1,1,2,4,50.0,25.0,13.33,19.05
+2021,CFOZ,Letras - Língua Portuguesa e Língua Inglesa e Respectivas Literaturas,5,6,11,1,0,1,2,20.0,0.0,9.09,9.09
+2021,CFOZ,Matemática,3,2,30,0,0,20,20,0.0,0.0,66.67,57.14
+2021,CFOZ,Pedagogia,22,15,5,1,2,1,4,4.55,13.33,20.0,9.52
+2021,CFOZ,Turismo,11,5,21,1,1,2,4,9.09,20.0,9.52,10.81
+2021,CFB,Administração,22,14,5,3,0,0,3,13.64,0.0,0.0,7.32
+2021,CFB,Ciências Econômicas,18,15,17,5,4,4,13,27.78,26.67,23.53,26.0
+2021,CFB,Direito,24,11,9,1,0,0,1,4.17,0.0,0.0,2.27
+2021,CFB,Geografia,4,9,40,0,2,8,10,0.0,22.22,20.0,18.87
+2021,CFB,Medicina,21,14,5,2,3,2,7,9.52,21.43,40.0,17.5
+2021,CFB,Nutrição,16,7,12,2,1,3,6,12.5,14.29,25.0,17.14
+2021,CFB,Pedagogia,17,20,52,1,3,8,12,5.88,15.0,15.38,13.48
+2021,CFB,Serviço Social,5,9,25,0,3,6,9,0.0,33.33,24.0,23.08
+2021,CMCR,Administração,17,14,10,1,1,1,3,5.88,7.14,10.0,7.32
+2021,CMCR,Agronomia,23,12,9,2,3,3,8,8.7,25.0,33.33,18.18
+2021,CMCR,Ciências Contábeis,21,17,5,3,3,1,7,14.29,17.65,20.0,16.28
+2021,CMCR,Direito,23,10,11,1,3,3,7,4.35,30.0,27.27,15.91
+2021,CMCR,Educação Física,17,16,31,3,2,7,12,17.65,12.5,22.58,18.75
+2021,CMCR,Geografia,4,2,18,2,0,9,11,50.0,0.0,50.0,45.83
+2021,CMCR,História,7,3,48,4,1,22,27,57.14,33.33,45.83,46.55
+2021,CMCR,Letras - Língua Portuguesa e Respectivas Literaturas e Língua Alemã,1,0,11,1,0,5,6,100.0,0.0,45.45,50.0
+2021,CMCR,Letras - Língua Portuguesa e Respectivas Literaturas e Língua Espanhola,7,1,5,1,1,3,5,14.29,100.0,60.0,38.46
+2021,CMCR,Letras - Língua Portuguesa e Respetivas Literaturas e Língua Inglesa,8,3,4,2,1,2,5,25.0,33.33,50.0,33.33
+2021,CMCR,Zootecnia,22,7,11,2,0,2,4,9.09,0.0,18.18,10.0
+2021,CTOO,Superior de Tecnologia em Aquicultura,0,0,2,0,0,1,1,0.0,0.0,50.0,50.0
+2021,CTOO,Ciências Econômicas,18,14,9,0,1,1,2,0.0,7.14,11.11,4.88
+2021,CTOO,Ciências Sociais,9,5,25,2,2,5,9,22.22,40.0,20.0,23.08
+2021,CTOO,Engenharia de Pesca,0,1,39,0,0,14,14,0.0,0.0,35.9,35.0
+2021,CTOO,Engenharia Química,20,8,10,5,1,1,7,25.0,12.5,10.0,18.42
+2021,CTOO,Filosofia,13,5,61,1,2,16,19,7.69,40.0,26.23,24.05
+2021,CTOO,Química,5,12,49,0,2,13,15,0.0,16.67,26.53,22.73
+2021,CTOO,Secretariado Executivo Trilíngue,12,7,20,0,2,4,6,0.0,28.57,20.0,15.38
+2021,CTOO,Serviço Social,11,8,17,2,2,4,8,18.18,25.0,23.53,22.22
+2022,CCSC,Administração,23,11,23,0,0,1,1,0.0,0.0,4.35,1.75
+2022,CCSC,Ciência da Computação,19,17,12,1,2,2,5,5.26,11.76,16.67,10.42
+2022,CCSC,Ciências Biológicas,24,16,46,0,1,6,7,0.0,6.25,13.04,8.14
+2022,CCSC,Ciências Contábeis,24,16,1,3,2,0,5,12.5,12.5,0.0,12.2
+2022,CCSC,Ciências Econômicas,10,10,37,1,0,2,3,10.0,0.0,5.41,5.26
+2022,CCSC,Enfermagem,18,4,24,0,0,3,3,0.0,0.0,12.5,6.52
+2022,CCSC,Engenharia Agrícola,5,8,32,0,3,2,5,0.0,37.5,6.25,11.11
+2022,CCSC,Engenharia Civil,11,6,28,3,0,4,7,27.27,0.0,14.29,15.56
+2022,CCSC,Farmácia,20,4,24,2,0,7,9,10.0,0.0,29.17,18.75
+2022,CCSC,Fisioterapia,24,7,14,1,0,1,2,4.17,0.0,7.14,4.44
+2022,CCSC,Letras - Língua Portuguesa e Língua Espanhola e Respectivas Literaturas,5,4,9,1,1,3,5,20.0,25.0,33.33,27.78
+2022,CCSC,Letras - Língua Portuguesa e Língua Inglesa e Respectivas Literaturas,8,9,7,2,5,2,9,25.0,55.56,28.57,37.5
+2022,CCSC,Letras - Língua Portuguesa e Língua Italiana e Respectivas Literaturas,3,1,11,0,0,0,0,0.0,0.0,0.0,0.0
+2022,CCSC,Letras - língua Portuguesa e Língua Brasileira de Sinais- Libras e Literaturas Brasileira e Surda.,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0
+2022,CCSC,Matemática,10,5,28,1,0,4,5,10.0,0.0,14.29,11.63
+2022,CCSC,Medicina,26,19,0,0,0,0,0,0.0,0.0,0.0,0.0
+2022,CCSC,Odontologia,32,8,0,2,1,0,3,6.25,12.5,0.0,7.5
+2022,CCSC,Pedagogia,29,16,43,0,2,2,4,0.0,12.5,4.65,4.55
+2022,CFOZ,Administração,12,11,22,0,1,2,3,0.0,9.09,9.09,6.67
+2022,CFOZ,Ciência da Computação,18,12,14,2,1,3,6,11.11,8.33,21.43,13.64
+2022,CFOZ,Ciências Contábeis,19,8,18,3,3,1,7,15.79,37.5,5.56,15.56
+2022,CFOZ,Direito,33,9,0,3,1,0,4,9.09,11.11,0.0,9.52
+2022,CFOZ,Enfermagem,17,2,27,9,1,8,18,52.94,50.0,29.63,39.13
+2022,CFOZ,Engenharia Elétrica,6,8,30,2,5,22,29,33.33,62.5,73.33,65.91
+2022,CFOZ,Engenharia Mecânica,8,5,31,1,1,8,10,12.5,20.0,25.81,22.73
+2022,CFOZ,Hotelaria,0,2,37,0,1,3,4,0.0,50.0,8.11,10.26
+2022,CFOZ,Letras,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0
+2022,CFOZ,Letras - Língua Portuguesa e Língua Espanhola e Respectivas Literaturas,1,2,23,1,1,7,9,100.0,50.0,30.43,34.62
+2022,CFOZ,Letras - Língua Portuguesa e Língua Inglesa e Respectivas Literaturas,8,9,9,1,1,0,2,12.5,11.11,0.0,7.69
+2022,CFOZ,Matemática,2,2,31,0,0,5,5,0.0,0.0,16.13,14.29
+2022,CFOZ,Pedagogia,15,13,18,0,3,0,3,0.0,23.08,0.0,6.52
+2022,CFOZ,Turismo,5,1,40,1,0,2,3,20.0,0.0,5.0,6.52
+2022,CFB,Administração,16,16,13,3,2,3,8,18.75,12.5,23.08,17.78
+2022,CFB,Ciências Econômicas,13,11,34,4,1,9,14,30.77,9.09,26.47,24.14
+2022,CFB,Direito,28,7,10,2,1,2,5,7.14,14.29,20.0,11.11
+2022,CFB,Geografia,3,8,28,0,0,2,2,0.0,0.0,7.14,5.13
+2022,CFB,Medicina,26,20,0,5,2,0,7,19.23,10.0,0.0,15.22
+2022,CFB,Nutrição,9,4,30,2,0,2,4,22.22,0.0,6.67,9.3
+2022,CFB,Pedagogia,15,12,66,0,1,3,4,0.0,8.33,4.55,4.3
+2022,CFB,Serviço Social,3,4,17,0,0,0,0,0.0,0.0,0.0,0.0
+2022,CMCR,Administração,28,8,13,0,2,1,3,0.0,25.0,7.69,6.12
+2022,CMCR,Agronomia,25,4,16,0,0,3,3,0.0,0.0,18.75,6.67
+2022,CMCR,Ciências Contábeis,24,11,11,0,0,2,2,0.0,0.0,18.18,4.35
+2022,CMCR,Direito,37,10,0,0,1,0,1,0.0,10.0,0.0,2.13
+2022,CMCR,Educação Física,20,4,46,0,0,2,2,0.0,0.0,4.35,2.86
+2022,CMCR,Geografia,1,0,20,0,0,2,2,0.0,0.0,10.0,9.52
+2022,CMCR,História,5,4,25,1,1,1,3,20.0,25.0,4.0,8.82
+2022,CMCR,Letras - Língua Portuguesa e Respectivas Literaturas e Língua Alemã,0,0,3,0,0,0,0,0.0,0.0,0.0,0.0
+2022,CMCR,Letras - Língua Portuguesa e Respectivas Literaturas e Língua Espanhola,3,0,11,1,0,1,2,33.33,0.0,9.09,14.29
+2022,CMCR,Letras - Língua Portuguesa e Respetivas Literaturas e Língua Inglesa,6,0,12,0,0,0,0,0.0,0.0,0.0,0.0
+2022,CMCR,Zootecnia,4,0,17,0,0,2,2,0.0,0.0,11.76,9.52
+2022,CTOO,Superior de Tecnologia em Aquicultura,0,0,1,0,0,1,1,0.0,0.0,100.0,100.0
+2022,CTOO,Ciências Econômicas,17,11,15,3,1,2,6,17.65,9.09,13.33,13.95
+2022,CTOO,Ciências Sociais,3,3,17,0,1,1,2,0.0,33.33,5.88,8.7
+2022,CTOO,Engenharia de Pesca,2,0,23,0,0,0,0,0.0,0.0,0.0,0.0
+2022,CTOO,Engenharia Química,6,6,15,0,2,3,5,0.0,33.33,20.0,18.52
+2022,CTOO,Filosofia,9,2,18,0,1,0,1,0.0,50.0,0.0,3.45
+2022,CTOO,Química,4,9,18,0,0,2,2,0.0,0.0,11.11,6.45
+2022,CTOO,Secretariado Executivo Trilíngue,11,0,33,0,0,1,1,0.0,0.0,3.03,2.27
+2022,CTOO,Serviço Social,11,6,22,1,2,3,6,9.09,33.33,13.64,15.38
+2023,CCSC,Administração,40,21,0,0,0,0,0,0.0,0.0,0.0,0.0
+2023,CCSC,Ciência da Computação,26,21,0,1,1,0,2,3.85,4.76,0.0,4.26
+2023,CCSC,Ciências Biológicas,37,14,31,1,0,4,5,2.7,0.0,12.9,6.1
+2023,CCSC,Ciências Contábeis,28,24,0,1,2,0,3,3.57,8.33,0.0,5.77
+2023,CCSC,Ciências Econômicas,28,13,11,1,0,1,2,3.57,0.0,9.09,3.85
+2023,CCSC,Enfermagem,27,14,0,2,2,0,4,7.41,14.29,0.0,9.76
+2023,CCSC,Engenharia Agrícola,9,9,20,0,0,0,0,0.0,0.0,0.0,0.0
+2023,CCSC,Engenharia Civil,11,9,20,0,0,5,5,0.0,0.0,25.0,12.5
+2023,CCSC,Farmácia,20,16,4,1,0,0,1,5.0,0.0,0.0,2.5
+2023,CCSC,Fisioterapia,28,13,0,0,0,0,0,0.0,0.0,0.0,0.0
+2023,CCSC,Superior de Tecnologia em Gestão Pública,0,0,0,3,0,0,3,0.0,0.0,0.0,0.0
+2023,CCSC,Letras - Língua Portuguesa e Língua Espanhola e Respectivas Literaturas,1,2,13,0,0,3,3,0.0,0.0,23.08,18.75
+2023,CCSC,Letras - Língua Portuguesa e Língua Inglesa e Respectivas Literaturas,15,7,1,0,1,0,1,0.0,14.29,0.0,4.35
+2023,CCSC,Letras - Língua Portuguesa e Língua Italiana e Respectivas Literaturas,8,2,6,1,0,0,1,12.5,0.0,0.0,6.25
+2023,CCSC,Matemática,15,9,18,0,0,1,1,0.0,0.0,5.56,2.38
+2023,CCSC,Medicina,27,20,0,1,0,0,1,3.7,0.0,0.0,2.13
+2023,CCSC,Odontologia,27,20,0,0,3,0,3,0.0,15.0,0.0,6.38
+2023,CCSC,Pedagogia,36,25,25,1,2,2,5,2.78,8.0,8.0,5.81
+2023,CFOZ,Administração,24,20,0,8,8,0,16,33.33,40.0,0.0,36.36
+2023,CFOZ,Ciência da Computação,27,19,0,3,2,0,5,11.11,10.53,0.0,10.87
+2023,CFOZ,Ciências Contábeis,28,22,0,0,1,0,1,0.0,4.55,0.0,2.0
+2023,CFOZ,Direito,25,22,0,0,0,0,0,0.0,0.0,0.0,0.0
+2023,CFOZ,Enfermagem,21,14,5,1,2,1,4,4.76,14.29,20.0,10.0
+2023,CFOZ,Engenharia Elétrica,14,6,20,3,2,10,15,21.43,33.33,50.0,37.5
+2023,CFOZ,Engenharia Mecânica,8,10,22,1,1,14,16,12.5,10.0,63.64,40.0
+2023,CFOZ,Hotelaria,3,6,31,1,1,2,4,33.33,16.67,6.45,10.0
+2023,CFOZ,Letras - Língua Portuguesa e Língua Espanhola e Respectivas Literaturas,10,6,9,1,0,2,3,10.0,0.0,22.22,12.0
+2023,CFOZ,Letras - Língua Portuguesa e Língua Inglesa e Respectivas Literaturas,9,8,9,0,3,0,3,0.0,37.5,0.0,11.54
+2023,CFOZ,Matemática,3,4,27,0,1,1,2,0.0,25.0,3.7,5.88
+2023,CFOZ,Pedagogia,27,18,0,3,4,0,7,11.11,22.22,0.0,15.56
+2023,CFOZ,Turismo,6,5,29,1,2,9,12,16.67,40.0,31.03,30.0
+2023,CFB,Administração,27,20,0,0,2,0,2,0.0,10.0,0.0,4.26
+2023,CFB,Ciências Econômicas,28,21,3,0,1,0,1,0.0,4.76,0.0,1.92
+2023,CFB,Direito,28,20,0,1,1,0,2,3.57,5.0,0.0,4.17
+2023,CFB,Geografia,5,9,48,0,1,4,5,0.0,11.11,8.33,8.06
+2023,CFB,Medicina,27,20,0,0,0,0,0,0.0,0.0,0.0,0.0
+2023,CFB,Nutrição,19,8,14,2,0,0,2,10.53,0.0,0.0,4.88
+2023,CFB,Pedagogia,37,24,28,2,1,1,4,5.41,4.17,3.57,4.49
+2023,CFB,Serviço Social,5,8,28,0,1,1,2,0.0,12.5,3.57,4.88
+2023,CMCR,Administração,30,17,0,1,1,0,2,3.33,5.88,0.0,4.26
+2023,CMCR,Agronomia,31,5,7,5,1,1,7,16.13,20.0,14.29,16.28
+2023,CMCR,Ciências Contábeis,26,12,2,2,1,0,3,7.69,8.33,0.0,7.5
+2023,CMCR,Direito,28,18,0,1,0,0,1,3.57,0.0,0.0,2.17
+2023,CMCR,Educação Física,29,8,34,2,0,14,16,6.9,0.0,41.18,22.54
+2023,CMCR,Geografia,4,1,12,1,0,6,7,25.0,0.0,50.0,41.18
+2023,CMCR,História,10,4,19,1,0,6,7,10.0,0.0,31.58,21.21
+2023,CMCR,Letras - Língua Portuguesa e Respectivas Literaturas e Língua Alemã,0,1,2,0,0,1,1,0.0,0.0,50.0,33.33
+2023,CMCR,Letras - Língua Portuguesa e Respectivas Literaturas e Língua Espanhola,2,1,7,0,0,0,0,0.0,0.0,0.0,0.0
+2023,CMCR,Letras - Língua Portuguesa e Respetivas Literaturas e Língua Inglesa,6,5,3,2,1,1,4,33.33,20.0,33.33,28.57
+2023,CMCR,Superior de Tecnologia em Tecnologias Educacionais com Ênfase em Humanidades,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0
+2023,CMCR,Zootecnia,10,11,14,3,6,2,11,30.0,54.55,14.29,31.43
+2023,CTOO,Ciências Econômicas,24,14,2,0,1,0,1,0.0,7.14,0.0,2.5
+2023,CTOO,Ciências Sociais,11,5,30,1,2,18,21,9.09,40.0,60.0,45.65
+2023,CTOO,Engenharia de Pesca,3,1,14,3,1,13,17,100.0,100.0,92.86,94.44
+2023,CTOO,Engenharia Química,8,10,11,3,4,8,15,37.5,40.0,72.73,51.72
+2023,CTOO,Filosofia,8,5,28,6,1,12,19,75.0,20.0,42.86,46.34
+2023,CTOO,Química,10,12,32,2,5,17,24,20.0,41.67,53.12,44.44
+2023,CTOO,Secretariado Executivo Trilíngue,5,8,28,0,2,0,2,0.0,25.0,0.0,4.88
+2023,CTOO,Serviço Social,8,3,29,0,0,1,1,0.0,0.0,3.45,2.5
+2024,CCSC,Administração,33,21,0,0,0,0,0,0.0,0.0,0.0,0.0
+2024,CCSC,Ciência da Computação,27,21,0,5,3,0,8,18.52,14.29,0.0,16.67
+2024,CCSC,Ciências Biológicas,38,27,12,1,3,2,6,2.63,11.11,16.67,7.79
+2024,CCSC,Ciências Contábeis,27,22,0,0,1,0,1,0.0,4.55,0.0,2.04
+2024,CCSC,Ciências Econômicas,27,22,0,0,1,0,1,0.0,4.55,0.0,2.04
+2024,CCSC,Enfermagem,26,13,0,1,0,0,1,3.85,0.0,0.0,2.56
+2024,CCSC,Engenharia Agrícola,14,8,3,0,0,0,0,0.0,0.0,0.0,0.0
+2024,CCSC,Engenharia Civil,23,20,0,0,2,0,2,0.0,10.0,0.0,4.65
+2024,CCSC,Farmácia,21,20,1,0,0,0,0,0.0,0.0,0.0,0.0
+2024,CCSC,Fisioterapia,25,20,0,2,1,0,3,8.0,5.0,0.0,6.67
+2024,CCSC,Superior de Tecnologia em Gestão Pública,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0
+2024,CCSC,História,26,12,0,3,1,0,4,11.54,8.33,0.0,10.53
+2024,CCSC,Letras - Língua Portuguesa e Língua Espanhola e Respectivas Literaturas,3,7,6,2,3,3,8,66.67,42.86,50.0,50.0
+2024,CCSC,Letras - Língua Portuguesa e Língua Inglesa e Respectivas Literaturas,13,6,0,2,0,0,2,15.38,0.0,0.0,10.53
+2024,CCSC,Letras - Língua Portuguesa e Língua Italiana e Respectivas Literaturas,2,4,8,0,0,0,0,0.0,0.0,0.0,0.0
+2024,CCSC,Letras - Língua Portuguesa e Língua Brasileira de Sinais - Libras - Tradução e Interpretação,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0
+2024,CCSC,Letras - língua Portuguesa e Língua Brasileira de Sinais- Libras e Literaturas Brasileira e Surda.,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0
+2024,CCSC,Matemática,17,13,10,1,3,3,7,5.88,23.08,30.0,17.5
+2024,CCSC,Medicina,26,20,0,0,0,0,0,0.0,0.0,0.0,0.0
+2024,CCSC,Odontologia,25,20,0,2,2,0,4,8.0,10.0,0.0,8.89
+2024,CCSC,Pedagogia,49,29,3,1,1,0,2,2.04,3.45,0.0,2.47
+2024,CCSC,Tecnologia em Tradução e Interpretação em Libras - Tecnólogo,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0
+2024,CFOZ,Administração,24,18,0,1,0,0,1,4.17,0.0,0.0,2.38
+2024,CFOZ,Ciência da Computação,29,19,0,1,5,0,6,3.45,26.32,0.0,12.5
+2024,CFOZ,Ciências Contábeis,31,24,0,0,3,0,3,0.0,12.5,0.0,5.45
+2024,CFOZ,Direito,25,20,0,0,2,0,2,0.0,10.0,0.0,4.44
+2024,CFOZ,Enfermagem,17,20,3,0,0,0,0,0.0,0.0,0.0,0.0
+2024,CFOZ,Engenharia Elétrica,15,15,10,0,1,1,2,0.0,6.67,10.0,5.0
+2024,CFOZ,Engenharia Mecânica,17,11,12,0,1,0,1,0.0,9.09,0.0,2.5
+2024,CFOZ,Hotelaria,2,3,22,1,3,11,15,50.0,100.0,50.0,55.56
+2024,CFOZ,Letras - Língua Portuguesa e Língua Espanhola e Respectivas Literaturas,6,5,13,0,1,2,3,0.0,20.0,15.38,12.5
+2024,CFOZ,Letras - Língua Portuguesa e Língua Inglesa e Respectivas Literaturas,14,9,0,3,0,0,3,21.43,0.0,0.0,13.04
+2024,CFOZ,Matemática,3,6,16,0,0,3,3,0.0,0.0,18.75,12.0
+2024,CFOZ,Pedagogia,28,17,0,1,0,0,1,3.57,0.0,0.0,2.22
+2024,CFOZ,Turismo,11,10,19,0,0,1,1,0.0,0.0,5.26,2.5
+2024,CFB,Administração,22,21,0,0,0,0,0,0.0,0.0,0.0,0.0
+2024,CFB,Ciências Econômicas,24,27,2,0,0,0,0,0.0,0.0,0.0,0.0
+2024,CFB,Direito,26,20,0,2,1,0,3,7.69,5.0,0.0,6.52
+2024,CFB,Geografia,8,10,16,0,1,3,4,0.0,10.0,18.75,11.76
+2024,CFB,Medicina,25,21,0,0,0,0,0,0.0,0.0,0.0,0.0
+2024,CFB,Nutrição,20,8,5,0,1,1,2,0.0,12.5,20.0,6.06
+2024,CFB,Pedagogia,27,26,30,0,2,3,5,0.0,7.69,10.0,6.02
+2024,CFB,Serviço Social,11,8,17,0,0,1,1,0.0,0.0,5.88,2.78
+2024,CMCR,Administração,27,12,0,0,0,0,0,0.0,0.0,0.0,0.0
+2024,CMCR,Agronomia,25,15,0,5,3,0,8,20.0,20.0,0.0,20.0
+2024,CMCR,Ciências Contábeis,22,17,5,1,1,0,2,4.55,5.88,0.0,4.55
+2024,CMCR,Direito,26,21,0,3,1,0,4,11.54,4.76,0.0,8.51
+2024,CMCR,Educação Física,42,19,15,1,0,0,1,2.38,0.0,0.0,1.32
+2024,CMCR,Geografia,3,1,5,0,0,3,3,0.0,0.0,60.0,33.33
+2024,CMCR,História,7,6,7,0,0,0,0,0.0,0.0,0.0,0.0
+2024,CMCR,Letras - Língua Portuguesa e Respectivas Literaturas e Língua Alemã,1,0,1,0,0,1,1,0.0,0.0,100.0,50.0
+2024,CMCR,Letras - Língua Portuguesa e Respectivas Literaturas e Língua Espanhola,1,2,6,0,0,0,0,0.0,0.0,0.0,0.0
+2024,CMCR,Letras - Língua Portuguesa e Respetivas Literaturas e Língua Inglesa,4,6,8,0,3,1,4,0.0,50.0,12.5,22.22
+2024,CMCR,Superior de Tecnologia em Tecnologias Educacionais com Ênfase em Humanidades,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0
+2024,CMCR,Zootecnia,12,2,5,3,0,1,4,25.0,0.0,20.0,21.05
+2024,CTOO,Superior de Tecnologia em Aquicultura,8,4,13,2,2,2,6,25.0,50.0,15.38,24.0
+2024,CTOO,Ciências Econômicas,18,13,7,0,0,0,0,0.0,0.0,0.0,0.0
+2024,CTOO,Ciências Sociais,7,5,16,3,0,9,12,42.86,0.0,56.25,42.86
+2024,CTOO,Educação Especial Inclusiva,0,0,0,10,0,0,10,0.0,0.0,0.0,0.0
+2024,CTOO,Engenharia de Pesca,0,0,1,0,0,1,1,0.0,0.0,100.0,100.0
+2024,CTOO,Engenharia Química,18,6,3,6,0,0,6,33.33,0.0,0.0,22.22
+2024,CTOO,Filosofia,6,4,25,0,2,9,11,0.0,50.0,36.0,31.43
+2024,CTOO,Psicologia,25,23,0,0,3,0,3,0.0,13.04,0.0,6.25
+2024,CTOO,Química,11,13,22,3,5,8,16,27.27,38.46,36.36,34.78
+2024,CTOO,Secretariado Executivo Trilíngue,5,9,24,1,0,3,4,20.0,0.0,12.5,10.53
+2024,CTOO,Serviço Social,9,7,24,1,0,8,9,11.11,0.0,33.33,22.5
+2025,CCSC,Administração,28,17,0,0,0,0,0,0.0,0.0,0.0,0.0
+2025,CCSC,Ciência da Computação,21,11,2,1,0,0,1,4.76,0.0,0.0,2.94
+2025,CCSC,Ciências Biológicas,45,18,10,2,1,1,4,4.44,5.56,10.0,5.48
+2025,CCSC,Ciências Contábeis,24,14,0,0,0,0,0,0.0,0.0,0.0,0.0
+2025,CCSC,Ciências Econômicas,29,12,4,1,0,0,1,3.45,0.0,0.0,2.22
+2025,CCSC,Enfermagem,27,11,0,0,0,0,0,0.0,0.0,0.0,0.0
+2025,CCSC,Engenharia Agrícola,18,5,13,2,0,3,5,11.11,0.0,23.08,13.89
+2025,CCSC,Engenharia Civil,21,10,3,0,0,0,0,0.0,0.0,0.0,0.0
+2025,CCSC,Farmácia,19,8,7,0,1,0,1,0.0,12.5,0.0,2.94
+2025,CCSC,Fisioterapia,23,12,0,1,1,0,2,4.35,8.33,0.0,5.71
+2025,CCSC,Geografia,14,2,21,0,0,4,4,0.0,0.0,19.05,10.81
+2025,CCSC,Superior de Tecnologia em Gestão Pública,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0
+2025,CCSC,História,28,6,1,3,0,0,3,10.71,0.0,0.0,8.57
+2025,CCSC,Letras - Língua Portuguesa e Língua Espanhola e Respectivas Literaturas,7,4,3,0,0,0,0,0.0,0.0,0.0,0.0
+2025,CCSC,Letras - Língua Portuguesa e Língua Inglesa e Respectivas Literaturas,13,6,0,1,0,0,1,7.69,0.0,0.0,5.26
+2025,CCSC,Letras - Língua Portuguesa e Língua Italiana e Respectivas Literaturas,7,2,7,0,0,1,1,0.0,0.0,14.29,6.25
+2025,CCSC,Matemática,13,5,24,0,0,0,0,0.0,0.0,0.0,0.0
+2025,CCSC,Medicina,24,13,0,2,0,0,2,8.33,0.0,0.0,5.41
+2025,CCSC,Odontologia,21,12,0,0,0,0,0,0.0,0.0,0.0,0.0
+2025,CCSC,Pedagogia,44,22,4,0,0,0,0,0.0,0.0,0.0,0.0
+2025,CCSC, Superior de Tecnologia em Design Educacional,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0
+2025,CFOZ,Administração,19,14,0,0,0,0,0,0.0,0.0,0.0,0.0
+2025,CFOZ,Ciência da Computação,22,12,0,0,0,0,0,0.0,0.0,0.0,0.0
+2025,CFOZ,Ciências Contábeis,24,15,0,0,0,0,0,0.0,0.0,0.0,0.0
+2025,CFOZ,Direito,21,13,0,1,0,0,1,4.76,0.0,0.0,2.94
+2025,CFOZ,Enfermagem,24,6,6,0,0,0,0,0.0,0.0,0.0,0.0
+2025,CFOZ,Engenharia Elétrica,24,8,2,1,0,0,1,4.17,0.0,0.0,2.94
+2025,CFOZ,Engenharia Mecânica,17,5,17,0,0,3,3,0.0,0.0,17.65,7.69
+2025,CFOZ,Hotelaria,8,3,6,0,1,1,2,0.0,33.33,16.67,11.76
+2025,CFOZ,Letras,0,0,0,0,0,0,0,0.0,0.0,0.0,0.0
+2025,CFOZ,Letras - Língua Portuguesa e Língua Espanhola e Respectivas Literaturas,10,3,5,0,0,0,0,0.0,0.0,0.0,0.0
+2025,CFOZ,Letras - Língua Portuguesa e Língua Inglesa e Respectivas Literaturas,12,7,0,2,1,0,3,16.67,14.29,0.0,15.79
+2025,CFOZ,Matemática,13,7,17,1,0,2,3,7.69,0.0,11.76,8.11
+2025,CFOZ,Pedagogia,23,13,0,1,0,0,1,4.35,0.0,0.0,2.78
+2025,CFOZ,Turismo,18,11,8,0,0,2,2,0.0,0.0,25.0,5.41
+2025,CFB,Administração,22,13,0,0,0,0,0,0.0,0.0,0.0,0.0
+2025,CFB,Ciências Econômicas,21,12,19,1,0,0,1,4.76,0.0,0.0,1.92
+2025,CFB,Direito,20,12,0,0,0,0,0,0.0,0.0,0.0,0.0
+2025,CFB,Geografia,6,4,21,0,0,2,2,0.0,0.0,9.52,6.45
+2025,CFB,Medicina,22,13,0,0,2,0,2,0.0,15.38,0.0,5.71
+2025,CFB,Nutrição,15,2,14,0,0,0,0,0.0,0.0,0.0,0.0
+2025,CFB,Pedagogia,35,15,19,0,1,0,1,0.0,6.67,0.0,1.45
+2025,CFB,Serviço Social,15,5,30,0,0,1,1,0.0,0.0,3.33,2.0
+2025,CMCR,Administração,24,13,0,1,0,0,1,4.17,0.0,0.0,2.7
+2025,CMCR,Agronomia,16,14,0,1,1,0,2,6.25,7.14,0.0,6.67
+2025,CMCR,Ciências Contábeis,27,13,0,0,0,0,0,0.0,0.0,0.0,0.0
+2025,CMCR,Direito,22,13,0,2,0,0,2,9.09,0.0,0.0,5.71
+2025,CMCR,Educação Física,42,19,3,1,0,0,1,2.38,0.0,0.0,1.56
+2025,CMCR,História,8,3,13,1,0,0,1,12.5,0.0,0.0,4.17
+2025,CMCR,Letras - Língua Portuguesa e Respectivas Literaturas e Língua Espanhola,6,0,13,0,0,0,0,0.0,0.0,0.0,0.0
+2025,CMCR,Letras - Língua Portuguesa e Respetivas Literaturas e Língua Inglesa,12,6,2,0,0,0,0,0.0,0.0,0.0,0.0
+2025,CMCR,Zootecnia,18,7,10,0,0,0,0,0.0,0.0,0.0,0.0
+2025,CTOO,Superior de Tecnologia em Aquicultura,10,2,11,1,0,0,1,10.0,0.0,0.0,4.35
+2025,CTOO,Ciências Econômicas,21,12,6,0,1,0,1,0.0,8.33,0.0,2.56
+2025,CTOO,Ciências Sociais,5,6,15,0,0,1,1,0.0,0.0,6.67,3.85
+2025,CTOO,Engenharia Química,16,2,6,0,1,5,6,0.0,50.0,83.33,25.0
+2025,CTOO,Filosofia,12,4,16,1,0,1,2,8.33,0.0,6.25,6.25
+2025,CTOO,Psicologia,21,14,0,0,0,0,0,0.0,0.0,0.0,0.0
+2025,CTOO,Química,15,4,27,0,0,2,2,0.0,0.0,7.41,4.35
+2025,CTOO,Secretariado Executivo Trilíngue,14,7,16,0,1,1,2,0.0,14.29,6.25,5.41
+2025,CTOO,Serviço Social,19,8,11,1,0,2,3,5.26,0.0,18.18,7.89
